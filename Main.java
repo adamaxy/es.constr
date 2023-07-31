@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String[] residentes = {"Devy", "Salvo", "Peppe"};
+        String[] residentes = {"antonio", "giovanni", "nicola"};
         House casa = new House();
-        casa.setFloorsNumber(9);
-        casa.setAddress("Via Uruguay 30/2");
+        casa.setFloorsNumber(5);
+        casa.setAddress("Via crispi 78");
         
         casa.setResidentsNames(residentes);
         casa.houseDetails();
