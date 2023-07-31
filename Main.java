@@ -1,35 +1,41 @@
-public class Main {
-    public static void main(String[] args) {
+import java.util.Arrays;
 
-class Programmer {
-    String name;
-    int age;
-    boolean wearsGlasses;
+public class House {
+    private int floorsNumber;
 
-    void drinkCoffee() {
-        System.out.println("Espresso è il segreto!");
+    private String address;
+
+    private String[] residentsNames;
+
+
+    public int getFloorsNumber() {
+        return floorsNumber;
     }
 
-    class House {
-
-        String address;
-        int numberOfFloors;
-
-        // Costruttore
-        public House(String address, int numberOfFloors) {
-            this.address = address;
-            this.numberOfFloors = numberOfFloors;
-            System.out.println("Una nuova casa è stata creata all'indirizzo: " + address);
-        }
+    public void setFloorsNumber(int floorsNumber) {
+        this.floorsNumber = floorsNumber;
     }
 
-    public class Tester {
-        public void main(String[] args) {
-            // Dichiarazione di due variabili House
-            House house1, house2;
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String[] getResidentsNames() {
+        return residentsNames;
+    }
+
+    public void setResidentsNames(String[] residentsNames) {
+        this.residentsNames = residentsNames;
+    }
 
 
-            house1 = new House("Via Roma 123", 2);
-            house2 = new House("Piazza Italia 7", 3);
-        }
-    }}}}
+    public void houseDetails(){
+        System.out.println(String.format("The number of the floor %d", getFloorsNumber()));
+        System.out.println(String.format("the address is %s", getAddress()));
+        System.out.println(Arrays.toString(getResidentsNames()));
+    }
+}
