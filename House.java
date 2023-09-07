@@ -3,7 +3,12 @@ import java.util.Arrays;
 public class House {
 private int floorsNumber;
 private String address;
-  private String[] residentsNames;
+private String[] residentsNames;
+  
+  House(String floorsNumber, String address, String residentsNames){
+        this.address= address;
+        this.floorsNumber = floorsNumber;
+        this.residentsNames = residentsNames;
 
 
     public int getFloorsNumber() {
